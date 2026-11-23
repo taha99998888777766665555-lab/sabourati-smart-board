@@ -1,0 +1,6 @@
+{
+  "name": "sabourati-tests",
+  "private": true,
+  "description": "اختبارات سبورتي الذكية — تعمل من داخل الحزمة نفسها (المسارات نسبية). التثبيت: npm i playwright && npx playwright install chromium",
+  "dependencies": { "playwright": "*" }
+}

@@ -1,0 +1,57 @@
+# MANIFEST — md5 لكل ملف في الحزمة
+
+```
+efdcb03de12d7a10b58cfbfacd1b7b3d  ./HANDOFF-TO-CLAUDE.md
+24a37eb743d71fb68ee56e91511363d2  ./README-RUN.txt
+69d97afe84aff92c883d64aaf6f65845  ./TEST-REPORT.md
+eaa5ed09d59e18cda06cdca8af1ab287  ./approved-tools/harf-ila-jumla.html
+0e4eeeb159b86d2b24499a7990eb1482  ./approved-tools/wheel.html
+7ed2fd79d5989eff23b51b2f03d05caa  ./screenshots/harf-1366x768.png
+b703f5323921b594338886daa7e18740  ./screenshots/harf-1920x1080.png
+fea25630d876fd7bf33b31d03bea5dca  ./screenshots/harf-768x1024.png
+cf886639115ca55e5062c518fe065c35  ./screenshots/menu-1366x768.png
+7bcb8f4c98b4ec1c44c83deb963ecc75  ./screenshots/menu-1920x1080.png
+e641989220ce248912e0496684691f17  ./screenshots/menu-768x1024.png
+49e3e8293506e4b6a3d80b209297c3fc  ./screenshots/wheel-1366x768.png
+974aab8ce6a83f6b70dbabe8a4f60229  ./screenshots/wheel-1920x1080.png
+ff2e180fb435c075a4d610675bd24fec  ./screenshots/wheel-768x1024.png
+12b8030494f8fe01acbd8d17376ba0c8  ./smart-board-pro-merged.html
+2447d12116a01c312e7096c7a059b3a0  ./sources/build-chain/asm8.py
+15c02a482dfd660c21be4776791abacf  ./sources/build-chain/build.py
+82cfe1edcebfea3648b77c230bccdeae  ./sources/build-chain/patch2.py
+e3de9413182137e9f4ad5d32fe16e9bc  ./sources/build-chain/patch_core.py
+295c027bf2da23c97c7e98977f5a9380  ./sources/build-chain/template10.html
+0fd5678666844d40cc79cb692bc78981  ./sources/build-chain/template11.html
+31982b008e1ef874bf9885861dbcc4a9  ./sources/build-chain/template12.html
+c1fe1e55680d999c30e79c60b57c30fe  ./sources/build-chain/template8.html
+b4585a03b1b08d3b947870c2c2a43b1f  ./sources/build-chain/template9.html
+e7a1f725a91ff524216a49a3b4db44f9  ./sources/build-chain/ui.py
+3d215325de9c36a9e253bf5d159268fd  ./sources/build2.py
+5c6da3a298d53cc23b3d08103ce8442a  ./sources/erase2.js
+fcf425329722883dcc2511e321b1abad  ./sources/eraser_core.js
+f82e02fd3b221bdb732d59a909ea3fad  ./sources/fonts.css
+0404c7292f179822c2f092a5d35eca03  ./sources/m10_blobs.js
+3d6c9da41a01cb07c690b39697488f87  ./sources/m10_edutools.js
+a8ddc749b03967ecc1ee29b713141711  ./sources/m1_tools.js
+df275a873a7cdd13114bc51679cb800c  ./sources/m2_pages_view.js
+5711486b37db208a44dde7a145d2f193  ./sources/m3_select.js
+9cf41d8a68c9d90bccf4eb274ea379ca  ./sources/m4_text_image.js
+74bd09894022bebd4d08ab78d9adcfa7  ./sources/m5_files.js
+2ef9ac2905614248570dda3c6f11c3d9  ./sources/m6_teacher.js
+240ee38d7c40080f8991ef420a7d997b  ./sources/m7_nline.js
+a9b2dd5f6af52ed7d2bcdc1a3880f92b  ./sources/m8_cards.js
+0d8a2a4708d4da873cfad9265cc10fa5  ./sources/m9_focus.js
+58856e2d90dded6adfac67a396c854fa  ./sources/m9_init.js
+b31e528884af17f1adb8c36d7c575f94  ./sources/m_export.js
+2d0874406792acc7c26b0d7b3ba31616  ./sources/meas.js
+71aceff67f071fa1b8869ff38ab9c799  ./sources/meas2.js
+96de323330f8b8336f637a0051835e00  ./sources/pdfjs/pdf.min.js
+a53a71a2a5d618ed0f86ebf099db032a  ./sources/pdfjs/pdf.worker.min.js
+5a49ee786a49fbcc5f8b61b37a52f7f0  ./sources/template13.html
+6a3604f21ac237a457dc23489fa886d4  ./sources/textpart.js
+48a7336a463514b638c316ef7c0db1b3  ./tests/shot-asm.js
+4305e979e522fdefe98c6a453dc483b7  ./tests/t9.js
+3f30c5ca8175d304e156021a2f47f27c  ./tests/verify_merged.js
+2a06ffc4566fbeca2296e556d214a03e  ./tests/zlib.js
+b9ca6f16c370ce5cabef9a7518081cb2  ./tests/zt.js
+```

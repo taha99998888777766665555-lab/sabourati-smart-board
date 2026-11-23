@@ -1,0 +1,5 @@
+h=open('base_head.js',encoding='utf-8').read();bt=open('base_tests.js',encoding='utf-8').read();n=open('new_tests.js',encoding='utf-8').read();u=open('u_tests.js',encoding='utf-8').read();v=open('v_tests.js',encoding='utf-8').read();x=open('x_tests.js',encoding='utf-8').read();r=open('base_runner.js',encoding='utf-8').read()
+r=r.replace("const env={cfg,ctx,map:null};","const env={cfg,ctx,map:null,browser:b};")
+r=r.replace("R[t.id].runs.push({cfg:cfg.n,status,detail:res[1]});","R[t.id].runs.push({cfg:cfg.n,status,detail:res[1],extra:res[2]});")
+h=h.replace("smart-board-phase2-batch1/smart-board-draw-test-p2a.html","smart-board-phase2-batch4/smart-board-draw-test-p4.html").replace("'/mnt/user-data/outputs/smart-board-phase2-batch1/'","'/mnt/user-data/outputs/smart-board-phase2-batch4/'")
+open('t8.js','w',encoding='utf-8').write(h+bt+n+u+v+x+r)

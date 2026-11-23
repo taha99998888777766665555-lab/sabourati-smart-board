@@ -1,0 +1,53 @@
+PASS U01 A T2: عمليات متتابعة: رسم ٥ خطوط ثم تراجع وإعادة بالترتيب الصح | {"entries":{"u":5,"r":0},"undoSeq":[true,true,true,true,true],"afterAll":{"u":0,"r":5},"canUndo":false,"redoSeq":[true,true,true,true,true],"end":{"u":5,"r":0},"canRedo":
+PASS U02 A T2: كل خط مكتمل = عملية واحدة (خط من ٣٠٠ نقطة، نقطة مفردة)،  | {"long":{"pts":302,"entries":1,"patches":1},"dot":2,"cancelled":0,"touchIgnored":0,"multi":0,"outside":0,"blur":{"entries":1,"strokes":3},"equal":true,"afterUndoOne":2}
+PASS U03 A T2: التراجع ثم رسم جديد: يُمسح مسار الإعادة ولا تعود الخطوط  | {"mid":{"u":2,"r":2,"redoEn":true},"e":{"u":3,"r":0,"redoDis":true},"redone":false,"keepsOld":true,"goneAbsent":true,"len":3,"stillSame":true}
+PASS U04 A T2: مسح السبورة (بالضغطتين بنقر حقيقي) عملية واحدة: تراجع يع | {"base":{"ids":4,"n":4},"armed":{"n":4,"cnt":4},"cleared":{"els":0,"u":5,"label":"مسح السبورة","patches":4,"a":73661568,"clears":1,"idxDesc":"3,2,1,0"},"un":{"same":true,
+PASS U05 A T2: حدود السجل: حد مخفّض (٥٠) وافتراضي (٢٠٠): تُسقط أقدم الع | {"def":200,"s50":{"strokes":60,"u":50,"dropped":10,"btn":"٥٠"},"undone":50,"left":10,"undoDis":true,"redoN":50,"redone":50,"full":60,"valid":true,"s200":{"strokes":210,"u
+PASS U06 A T2: مستند من ٣ صفحات: التراجع والإعادة ينقلان تلقائيًا إلى ا | {"pages":3,"uniq":3,"per":"1,2,1","entries":4,"nav":[[2,"1,2,0",true],[1,"1,1,0",true],[1,"1,0,0",true],[0,"0,0,0",true]],"rn":[[0,"1,0,0"],[1,"1,1,0"],[1,"1,2,0"],[2,"1,
+PASS U07 A T2: المتانة: لا تراجع أثناء الكتابة، تغيير الحجم، سحب وطيّ و | {"active":{"dis":true,"res":false,"n":6,"act":true,"after":{"n":7,"dis":false}},"shield":{"before":{"h":0,"n":7,"undone":0},"during":{"h":1,"n":7,"undone":0,"act":true}},
+PASS U08 A T2: اختبار عشوائي بذرة ثابتة (٣٠٠ عملية: رسم/مسح/تراجع/إعادة | {"bad":null,"ops":{"draw":120,"clear":27,"undo":67,"redo":56,"nav":30},"final":"1,9,9","hist":[40,0],"dropped":50,"errors":0}
+PASS U09 A T2: زرا التراجع والإعادة: ≥٤٨ بكسل، ظاهران داخل الشاشة في كل | {"sizeOk":true,"inside":true,"initOk":true,"enOk":true,"min":48,"au":{"n":2,"u":"٢","r":"١","redoEn":true,"uTitle":"تراجع عن: خط"},"ar":{"n":3,"u":"٣","r":"٠","redoDis":t
+PASS U10 A T2: المؤشر البصري للحماية: أثناء الكتابة يخفت كل الشريط مع إ | {"a":{"guard":false,"tail":false,"hist":1,"tool":1,"toolInHist":false,"handle":1,"after":"none","shadow":"none"},"b":{"guard":true,"tail":false,"hist":0.55,"tool":0.55,"t
+PASS U11 A T2: تغطية الشريط العمودي والأفقي بعد التضييق (مع الحفاظ على  | {"cfg":"A","vertical":{"cov":4.75,"w":118,"h":394,"scroll":false,"small":[]},"horizontal":{"cov":4.38,"w":739,"h":58,"scroll":false,"small":[]},"batch2V":8.35,"batch2H":7
+PASS U12 A T2: لا يدخل السجل في الملف المصدَّر؛ تراجع ثم إعادة يعيدان ن | {"noHist":true,"undoEqualsBefore":true,"redoEqualsAfter":true,"after":{"u":0,"r":0,"uDis":true,"rDis":true,"n":4},"nd":{"u":0,"r":0}}
+PASS U13 A T2: قابلية التوسّع: رقاع generic (نقل، نسخ، ممحاة جزئية = حذ | {"moveUndo":true,"moveRedo":true,"copyN":4,"copyUndo":true,"copyRedo":true,"eraseN":"pa,pb,copy1,emwtpzgiydwmyr8,emwtpzgjwdxcmvl","eraseUndo":true,"eraseRedo":true,"singl
+PASS U14 A T2: سلامة المستند: سجل غير متسق (عنصر حُذف خارجيًا، معرّف مك | {"missing":[false,true,1,0,0],"dupRedo":[false,true,1,0],"unknown":[false,true,1,0],"noPage":[false,true,1,0],"partial":[false,1],"atomic":[false,true,1],"recover":[true,
+PASS U15 A T2-مراجعة: مهلة الحماية: زرا التراجع/الإعادة يعملان بنقر حقي | {"dtUndo":11,"afterUndo":{"n":3,"tail":true,"hits":0},"afterRedo":{"n":4},"press":{"p":"pen","h":1,"tail":true},"pr0":{"p":"pen","h":0},"pressAfter":"erase","backToPen":"
+PASS U16 A T2-مراجعة ٢: العدّاد يُخفى عند الصفر (مع بقاء مكانه والزر مع | {"z":[{"t":"٠","fs":16,"fw":700,"w":26,"h":20,"hid":true,"dis":true,"bh":51,"bw":48},{"t":"٠","fs":16,"fw":700,"w":26,"h":20,"hid":true,"dis":true,"bh":51,"bw":48}],"n":[
+PASS V01 A T3: الفهرس المكاني: استعلام ٤٠٠ مستطيل عشوائي (سالب، ضخم، من | {"bad":0,"checked":400,"n":2100,"ci":{"ok":true,"errors":[],"built":true,"cells":135,"tracked":2100},"ci128":true,"g128":true,"ci48":true,"g48":true,"ci512":true,"g512":t
+PASS V02 A T3: صيانة الفهرس: ٤٠٠ عملية عشوائية (رسم، تراجع، إعادة، مسح، | {"bad":null,"ops":{"undo":84,"copy":53,"redo":65,"erase":49,"move":39,"clear":14,"draw":96},"n":52,"regions":233,"fulls":14}
+PASS V03 A T3: تطابق الرسم الجزئي والكامل (لا فرق هيكلي: ٠ بكسل بفارق > | {"cmps":79,"diffPx":34002,"over16":946,"over32":145,"over64":15,"over128":0,"maxDiff":89,"worst":[],"regions":48,"ci":true}
+PASS V04 A T3: تطابق الرسم الجزئي والكامل عند ٥٠٠٠ خط (لا فرق هيكلي) مع | {"cmps":17,"structuralPx":0,"maxDiff":40,"aaEdgePx":1994,"bad":[],"n":5005,"regions":12}
+PASS V05 A T3: بيانات الأداء ومعيار القبول: عند ٠ و٢٠٠٠ و٥٠٠٠ خط (ملفان | {"fails":[],"sum":{"wide":[{"N":0,"handlerP99":0.1,"handlerMax":0.2,"flushP99":0.9,"perMoveP99":0.45,"commitP99":3,"undoRegionP95":0.5,"redoRegionP95":0.6,"undoFullP95":3
+PASS V06 A T3: الذاكرة بعد ١٠٠٠ عملية (رسم/تراجع/إعادة/مسح) على مستند ٢ | {"baseMB":1.8984375,"filledMB":8.5400390625,"after1000MB":9.7001953125,"after2000MB":10.025390625,"endMB":2.49609375,"growth1MB":1.16015625,"growth2MB":0.326171875,"lefto
+PASS V07 A T3: زر «قياس الأداء» في لوحة التشخيص: يعمل على مستند مؤقت ثم | {"mid":{"dis":true,"st":"جارٍ القياس… لا تلمس الشاشة."},"idSame":true,"jsonSame":true,"hist":[2,1,2,1],"st":"اكتمل القياس وأُعيد مستندك كما كان.","cols":3,"latinDigits":0
+PASS V08 A T3: الفهرس لا يدخل الملف المصدَّر؛ تراجع+إعادة بإعادة رسم ال | {"noIdx":true,"undoEq":true,"redoEq":true,"pxDiff":0,"aaPx":48,"maxDiff":13,"guardRebuild":true,"ci":true}
+PASS V09 A T3: عند تعطيل إعادة رسم المنطقة (CFG.regionRedraw=false) يبق | {"off":{"dr":0,"df":1,"eq":0},"on":{"dr":1,"df":0,"eq":0},"big":{"dr":0,"df":1,"eq":0},"many":{"dr":0,"df":1,"eq":0}}
+PASS X01 A T4.١: الإصابة (hitStroke) تطابق حقيقة البكسل: ٤٠٠ حالة عشوائ | {"n":400,"amb":2,"hit":358,"miss":40,"bad":[],"nbad":0}
+PASS X02 A T4.١: دقة مسافة الحبر (inkDist) مقابل عيّنات كثيفة مستقلة لل | {"n":2000,"maxErr":0.0042,"worst":{"i":15,"j":20,"got":-2.927765267362728,"ref":-2.923519680923448}}
+PASS X03 A T4.١: ثوابت المحو بالبكسل (٣٠٠ حالة): صفر حبر داخل الممحاة،  | {"tot":{"cases":300,"split":292,"removed":0,"miss":8,"inside":0,"added":0,"excess":0,"resampled":252,"maxDev":0.0991,"frags":509,"worstIn":0.143},"bad":[]}
+PASS X04 A T4.١: الأطراف المستديرة: كل شظية لها طرف مقصوص يلامس غطاؤها  | {"n":240,"worstGap":0.443,"worstIn":0,"bad":[],"nbad":0}
+PASS X05 A T4.١: الخطوط المنحنية: دوائر وحلزونات ومنحنيات S بأنصاف أقطا | {"tot":{"cases":182,"inside":0,"added":0,"excess":0,"maxDev":0.0832,"resampled":110,"split":146,"frags":293},"bad":[]}
+PASS X06 A T4.١: السماكات المتغيرة: النقاط الداخلية للشظية تطابق الأصلي | {"n":149,"checked":5054,"nInteriorBad":0,"maxWDev":0,"bad":[]}
+PASS X07 A T4.١: التحويلات الهندسية: تدوير وتكبير وانعكاس (det<0) وإزاح | {"out":{"id":{"cs":24,"ins":0,"add":0,"exc":0,"aniso":0},"rot":{"cs":24,"ins":0,"add":0,"exc":0,"aniso":0},"scale":{"cs":24,"ins":0,"add":0,"exc":0,"aniso":0},"half":{"cs
+PASS X08 A T4.١: الكتابة العربية: كلمة بنقاط (١، ٢، ٣) وحركات قصيرة (فت | {"n":3900,"amb":11,"wrongHit":0,"wrongMiss":0,"touchedDot":163,"touchedDia":70,"untouchedKept":3612,"invBad":0,"fragTotal":126,"plans":60,"planBad":0,"bad":[]}
+PASS X09 A T4.١: النقاط والحركات الصغيرة: ممحاة تمرّ بين نقطتين بفاصل أ | {"between":["miss","miss"],"touchOne":["removed","miss"],"fatha":{"none":{"status":"split","frags":[8.45],"dropped":0},"half":{"status":"split","frags":[8.45],"dropped":0
+PASS X10 A T4.١: سياسات الحد الأدنى للشظية (القرار ٤ غير محسوم: الوحدة  | {"cases":300,"cnt":{"none":517,"half":494,"fixed4":502,"fixed12":475},"minNone":0.0235,"viol":0}
+PASS X11 A T4.١: القص المتكرر: ٥٠٠ ممحاة متتالية على خط يد كثيف (طول ≈  | {"dense":{"name":"dense700","cuts":500,"start":{"n":1,"pts":700,"bytes":23218},"end":{"n":7,"pts":681,"bytes":23059},"trace":[{"n":2,"pts":689,"bytes":22954},{"n":4,"pts"
+PASS X12 A T4.١: حالات طرفية: نقطة وحيدة، خطّا نقطتين، نقاط متطابقة، مم | {"dotHit":"removed","dotMiss":"miss","twoPtCut":["split",2],"same":"removed","pointCap":"split","contains":"removed","tiny":"split","NaN":["miss",false,"miss"],"edge":"sp
+PASS X13 A T4.١: مخطِّط الرقاع (planErase) يتوافق مع بنية T2/T3: تطبيقه | {"applied":25,"fragsTot":34,"orderOk":true,"ci":true,"valid":true,"ci2":true,"undoEq":true,"redoEq":true,"changed":true}
+FAIL X14 A T4.١: قياسات الأداء الأولية: زمن التخطيط (استعلام الفهرس + ا | {"hand0":{"whole":{"n":300,"p50":0,"p95":0,"p99":0,"max":0.1},"partial":{"n":300,"p50":0,"p95":0,"p99":0,"max":0.1},"partialLight":{"n":300,"p50":0,"p95":0,"p99":0,"max":
+PASS X15 A T4.١: نقطة وحيدة (نقطة حرف) تحت التحويلات: حدّ الإصابة عند r | {"n":200,"bad":0,"maxDiff":0}
+PASS X16 A T4.١: القرار ٤ (الافتراضي نصف السماكة مع حماية التفاصيل الصغ | {"bigCases":188,"bigDropped":8,"bigViol":0,"smallCases":144,"smallDropped":0,"smallSplit":142,"dots":7,"dotsRemoved":7}
+PASS X17 A T4.١: دقة نقاط القص تحليليًا (خط أفقي مستقيم: موضع القص = x  | {"n":6,"maxErr":0,"gn":3,"missGraze":0,"grazeIn":0,"sn":13,"sparseMiss":0}
+PASS Y01 A T4.٢: مقارنة الاستراتيجيات على ضربة محو عبر كومة كثيفة (٢٠٠٠ | {"hand":{"exactFrame":{"moves":157,"caps":157,"flushP50":3,"flushP95":8.6,"flushMax":17.8,"releaseMs":0.9,"jumpPx":0,"mismatchVsFull":0,"touched":661,"frags":725,"patches
+FAIL Y07 A T4.٢: ضغط أقصى (٢٠٠٠ خط عريض تغطي الصفحة؛ الضربة تلمس نحو ٢٧ | {"wide":{"exactFrame":{"moves":157,"caps":157,"flushP50":25.1,"flushP95":42.9,"flushMax":55,"releaseMs":0.5,"jumpPx":0,"mismatchVsFull":0,"touched":2781,"frags":3122,"pat
+PASS Y02 A T4.٢: الكتابة العربية بالممحاة الفعلية: ضربة تمرّ بين نقطتين | {"items":13,"touchedCount":3,"keptSame":10,"keptBad":0,"touchedOk":2,"touchedBad":0,"dotsRemoved":1,"ink":0,"added":0,"histAdded":1,"restored":true,"redoOk":true,"idx":tr
+PASS Y03 A T4.٢: التراجع والإعادة والإلغاء: ضربة محو جزئي وأخرى كاملة = | {"partialSteps":1,"partialChanged":true,"partialUndoExact":true,"wholeSteps":1,"wholeRemovedOnly":true,"wholeUndoExact":true,"cancelRestored":true,"cancelHist":0,"cancelC
+PASS Y04 A T4.٢: لا عودة للحبر المحذوف: أثناء ضربة على كومة كثيفة، عند  | {"probesN":2590,"bad":0,"badAfter":0}
+PASS Y05 A T4.٢: واجهة الممحاة: زرّا «قلم» و«ممحاة» وخيارات الجزئي/الكا | {"shownAtErase":true,"pressedErase":true,"sizes":[[52,52],[52,52],[79,48],[81,48],[221,48]],"minOk":true,"modeW":true,"modeP":true,"optsTxt":"الممحاة نوع المحو محو جزئي م
+PASS Y06 A T4.٢: حالات حدّية: نقرة محو واحدة بلا حركة، ضربة على صفحة فا | {"click":true,"emptyNoHist":true,"steps":20,"idxMid":true,"allUndo":true,"idx":true}
+PASS T41 A لا أخطاء في الصفحة (طوال التشغيل)
+PASS T42 A لا طلبات شبكة خارجية
+PASS T43
+SCENARIOS 52 RUNS 52 PASS 50 FAIL 2 SKIP 0

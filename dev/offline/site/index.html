@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="sabourati-gateway" content="1">
+<title>سبورتي الذكية | Smart Board Pro</title>
+<noscript><meta http-equiv="refresh" content="0;url=board.html"></noscript>
+<style>html,body{margin:0;height:100%;background:#f6f7f4;color:#17352e;font:18px system-ui,"Segoe UI",Tahoma,sans-serif}body{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px}a{color:#0f6b5c;font-weight:700}</style>
+</head>
+<body>
+<div>جارٍ فتح «سبورتي الذكية»…</div>
+<a href="board.html" id="go">فتح السبورة مباشرة</a>
+<script>
+/* بوابة: تسجّل Service Worker الخاص بمسار السبورة ثم تنتقل إلى board.html (مرة واحدة، بلا حلقات). */
+(function(){
+  var done=false;
+  function go(){if(done)return;done=true;location.replace('board.html'+location.search+location.hash)}
+  if(!('serviceWorker' in navigator)){go();return}
+  navigator.serviceWorker.register('sw.js',{scope:'./',updateViaCache:'none'})
+    .then(function(){return navigator.serviceWorker.ready})
+    .then(go,go);
+  setTimeout(go,2500);
+})();
+</script>
+</body>
+</html>

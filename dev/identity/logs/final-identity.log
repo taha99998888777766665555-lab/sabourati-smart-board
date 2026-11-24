@@ -1,0 +1,50 @@
+PASS S-bar-1920 | {"creditHidden":false,"ov":[],"out":[],"sw":1920,"cw":1920,"h":52,"tagGone":true,"brandShown":true,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-credit-shown-1920 | الاسم ظاهر عند اتساع الشاشة
+PASS S-bar-1366 | {"creditHidden":false,"ov":[],"out":[],"sw":1366,"cw":1366,"h":52,"tagGone":true,"brandShown":true,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-credit-shown-1366 | الاسم ظاهر عند اتساع الشاشة
+PASS S-bar-1280 | {"creditHidden":false,"ov":[],"out":[],"sw":1280,"cw":1280,"h":52,"tagGone":true,"brandShown":true,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-bar-1100 | {"creditHidden":false,"ov":[],"out":[],"sw":1100,"cw":1100,"h":52,"tagGone":true,"brandShown":true,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-bar-1024 | {"creditHidden":false,"ov":[],"out":[],"sw":1024,"cw":1024,"h":52,"tagGone":true,"brandShown":true,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-bar-900 | {"creditHidden":false,"ov":[],"out":[],"sw":900,"cw":900,"h":52,"tagGone":true,"brandShown":false,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-credit-hidden-or-fits-900 | الاسم إما مخفي أو يتسع دون تداخل
+PASS S-bar-860 | {"creditHidden":false,"ov":[],"out":[],"sw":860,"cw":860,"h":52,"tagGone":true,"brandShown":false,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-credit-hidden-or-fits-860 | الاسم إما مخفي أو يتسع دون تداخل
+PASS S-bar-800 | {"creditHidden":true,"ov":[],"out":[],"sw":800,"cw":800,"h":52,"tagGone":true,"brandShown":false,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-credit-hidden-or-fits-800 | الاسم إما مخفي أو يتسع دون تداخل
+PASS S-credit-hidden-800 | الاسم مخفي عند ضيق المساحة
+PASS S-bar-600 | {"creditHidden":true,"ov":[],"out":[],"sw":600,"cw":600,"h":52,"tagGone":true,"brandShown":false,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-credit-hidden-or-fits-600 | الاسم إما مخفي أو يتسع دون تداخل
+PASS S-credit-hidden-600 | الاسم مخفي عند ضيق المساحة
+PASS S-bar-480 | {"creditHidden":true,"ov":[],"out":[],"sw":480,"cw":480,"h":52,"tagGone":true,"brandShown":false,"svgShown":true,"hz":"horizontal-tb","btnsOK":true,"need":164,"errs":[],"ext":[]}
+PASS S-credit-hidden-or-fits-480 | الاسم إما مخفي أو يتسع دون تداخل
+PASS S-credit-hidden-480 | الاسم مخفي عند ضيق المساحة
+PASS S-autosave-visible-1920 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-1366 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-1100 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-1024 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-960 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-900 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-860 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-800 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-780 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-720 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-700 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":0}}
+PASS S-autosave-visible-660 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":11}}
+PASS S-autosave-visible-640 | {"new":{"ind":true,"over":0},"old":{"ind":true,"over":24}}
+PASS S-autosave-visible-600 | {"new":{"ind":true,"over":20},"old":{"ind":true,"over":70}}
+PASS S-autosave-visible-480 | {"new":{"ind":true,"over":140},"old":{"ind":true,"over":191}}
+PASS A-open-content | {"open":true,"hasName":true,"hasTitle":true,"hasSub":true,"hasDesc":true,"noTag":true,"focus":"aboutClose","aria":"true","lbl":"aboutT"}
+PASS A-modal-blocks-undo-and-shortcuts | {"e1":1,"e2":1,"h1":{"u":1,"r":0},"h2":{"u":1,"r":0}}
+PASS A-esc-closes-focus-returns | {"hidden":true,"focus":"aboutBtn"}
+PASS A-close-button | 
+PASS A-backdrop-closes-and-draws-nothing | {"eb":1}
+PASS A-draw-works-after-close | {"e3":1,"e4":2}
+PASS A-undo-works-after-close | 
+PASS A-present-hides-bar-and-credit | 
+PASS A-newdoc-dialog-still-works | 
+PASS A-no-errors-no-external | {"errs":[],"ext":[]}
+PASS M-match-preview-tokens | {"h1":["21px","rgb(29, 39, 51)","600","PlexAr"],"sub":["11.5px","rgb(77, 90, 102)"],"credit":["13px","rgb(74, 85, 97)","28px","16px"],"name":["rgb(15, 107, 92)","600"],"about":["rgb(15, 107, 92)","rgb(234, 243, 241)","rgb(15, 107, 92)",48],"bar":["rgb(255, 255, 255)","rgb(207, 214, 221)",52],"svg":[36]}
+PASS M-tools-geometry-identical | {"n":29,"diff":[]}
+PASS M-tool-list-identical | shape,hand,select,text
+
+TOTAL 48 PASS 48 FAIL 0 

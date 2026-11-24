@@ -1,0 +1,27 @@
+PASS Z01 A قلم: رسم، تراجع/إعادة، بكسل | {"a":1,"c1":[27,27,27,255],"b":0,"c2":[255,255,255,255],"d":1}
+PASS Z02 A قلم التمييز: شفافية ثابتة، لا تراكم عند التقاطع، ا | {"op":"0.4","op2":"","only":[255,239,153,255],"cross":[255,239,153,255],"side":[255,239,153,255]}
+PASS Z03 A أشكال: كل الأنواع، دائرة بالمركز، نسب ثابتة، لمسة  | {"ks":["line","arrow","rect","ellipse","triangle","rtriangle","diamond","ellipse","rect"],"cw":168,"ch":168,"sw":108,"sh":108,"fillPx":[209,209,209,255],"h":{"u":10,"r":0}}
+PASS Z04 A تحديد: لمسة، تحريك (بلا أشباح)، تغيير حجم، تحديد إ | {"s1":1,"moved":true,"h1":{"u":3,"r":0},"old":[255,255,255,255],"nw":[27,27,27,255],"old2":[27,27,27,255],"grow":true,"ms":2,"n":[2,4,6,4,6],"col":"#d81b60","bw0":[584.0000144915873,365.0661271028461],"bw1":[365.06612710284605,584.0000144915873]}
+PASS Z05 A صفحات: إضافة/نسخ/حذف/نقل/تنقل مع تراجع وحفظ المحتو | {"a":{"n":2,"i":1,"e":0},"b":{"n":3,"i":2,"e":2,"ids":["emwtupnow113ub6","emwtupnow12isqz"]},"c":{"i":0,"first":2},"d":{"i":2,"n":3},"e":2,"f":{"n":3,"e":2},"g":2,"h2":3,"th":3,"nav":1,"lastDel":1}
+PASS Z06 A نص عربي: إدراج، يمين-يسار، حركات، تعديل، حذف بإفرا | {"open1":true,"open2":true,"dark":2754,"L":{"lines":2,"w":359.3027648925781,"rtlFirst":"rtl","rtlSecond":"ltr"},"txt":"نص معدَّل","h":{"u":2,"r":0},"n4":0}
+PASS Z07 A صور: إدراج PNG، أصل، تحريك، حفظ واستعادة، حذف الأص | {"n":1,"as":1,"tl":"select","px":[25,118,210,255],"imp":{"ok":true,"a":1,"errs":[]},"noAsset":true}
+PASS Z08 A حفظ/استعادة: كل أنواع العناصر وصفحات وخلفيات، رفض  | {"r":{"ok":true,"same":true,"pages":2,"bg":"grid","len":2053},"bad":{"kind":false,"asset":false,"text":false,"dup":false,"bg":false,"ver":false,"hl":false,"mime":false,"tf":false,"ok":true},"loaded":{"n":0,"pages":2,"types":"image,shape,stroke,text"}}
+PASS Z09 A PDF: تصدير ثم استيراد (pdf.js)، صفحات مقفلة، كتابة | {"head":"%PDF-","r":{"n":2,"w":1920,"h":1080,"el":[{"t":"image","l":true}],"assets":2,"u":1},"px":[28,28,28,255],"sel":0,"e":2,"e2":2}
+PASS Z10 A ممحاة: أشكال ونصوص وصور تُمحى كاملة، خطوط جزئيًا،  | {"n0":3,"after":["stroke","stroke"],"h":{"u":6,"r":0},"undone":3}
+PASS Z11 A عرض: عجلة التكبير تحت المؤشر، تحريك، قرص بإصبعين،  | {"cy0":540,"cy1":604.6736283634459,"z1":4.664590270988126,"before":{"x":960,"y":540},"after":{"x":960,"y":540},"r":{"z0":1,"z":3,"n":0},"zmax":8,"zmin":0.2,"zi":1.25,"zr":1,"lab":"١٠٠٪"}
+PASS Z12 A أدوات المعلم: مسطرة (استقامة)، منقلة، ستارة، مؤقت، | {"maxd":0,"rgone":true,"pr":true,"cu":{"h0":394,"h1":143,"sh":716},"tm":{"t0":"٠٥:٠٠","t1":"٠٤:٥٩","hasPause":true},"bg":{"plain":255,"lines":247,"grid":218,"dots":210},"dk":[22,22,22,255]}
+PASS Z13 A تصدير: PNG وZIP وPDF فعلية قابلة للقراءة | {"sig":"89504e470d0a1a0a","w":2400,"h":1350,"zsig":"504b0304","zr":"None 2","pages":2,"names":["download","download","download"]}
+PASS Z14 A حفظ تلقائي واستعادة بعد إعادة التحميل | {"saved":1,"err":null,"tt":"يوجد مستند محفوظ تلقائيًا (٢٤‏/١١‏/٢٠٢٦، ١:٤٢:٤٠ ص).\nاستعادت","n":2}
+PASS Z15 A تخطيط: أزرار ≥٤٨، بلا تمرير، تغطية الشريط ≤ الدفعة | {"cfg":"A","v":{"cov":4.69,"w":118,"h":389,"scroll":false,"small":[],"inside":true},"h":{"cov":4.23,"w":713,"h":58,"scroll":false,"small":[],"inside":true},"base":[8.35,7.2],"opt":{"right":{"inside":true,"overlapsTb":false},"bottom":{"inside":true,"overlapsTb"
+PASS Z16 A قائمة ملف والمعلم تُفتحان داخل الشاشة وعناصرها ≥٤٨ | {"file":{"inside":true,"minH":48,"dig":0},"teach":{"inside":true,"minH":48,"dig":0}}
+PASS Z17 A لا أخطاء في الصفحة ولا طلبات شبكة خارجية | 
+PASS Z15 B تخطيط: أزرار ≥٤٨، بلا تمرير، تغطية الشريط ≤ الدفعة | {"cfg":"B","v":{"cov":2.33,"w":118,"h":389,"scroll":false,"small":[],"inside":true},"h":{"cov":2.1,"w":713,"h":58,"scroll":false,"small":[],"inside":true},"base":[4.14,3.6],"opt":{"right":{"inside":true,"overlapsTb":false},"bottom":{"inside":true,"overlapsTb":
+PASS Z16 B قائمة ملف والمعلم تُفتحان داخل الشاشة وعناصرها ≥٤٨ | {"file":{"inside":true,"minH":48,"dig":0},"teach":{"inside":true,"minH":48,"dig":0}}
+PASS Z17 B لا أخطاء في الصفحة ولا طلبات شبكة خارجية | 
+PASS Z15 C تخطيط: أزرار ≥٤٨، بلا تمرير، تغطية الشريط ≤ الدفعة | {"cfg":"C","v":{"cov":4.69,"w":118,"h":389,"scroll":false,"small":[],"inside":true},"h":{"cov":4.23,"w":713,"h":58,"scroll":false,"small":[],"inside":true},"base":[8.35,7.2],"opt":{"right":{"inside":true,"overlapsTb":false},"bottom":{"inside":true,"overlapsTb"
+PASS Z16 C قائمة ملف والمعلم تُفتحان داخل الشاشة وعناصرها ≥٤٨ | {"file":{"inside":true,"minH":48,"dig":0},"teach":{"inside":true,"minH":48,"dig":0}}
+PASS Z17 C لا أخطاء في الصفحة ولا طلبات شبكة خارجية | 
+PASS Z15 D تخطيط: أزرار ≥٤٨، بلا تمرير، تغطية الشريط ≤ الدفعة | {"cfg":"D","v":{"cov":6.13,"w":118,"h":388,"scroll":false,"small":[],"inside":true},"h":{"cov":5.45,"w":709,"h":57,"scroll":false,"small":[],"inside":true},"base":[10.94,11.7],"opt":{"right":{"inside":true,"overlapsTb":false},"bottom":{"inside":true,"overlapsT
+PASS Z16 D قائمة ملف والمعلم تُفتحان داخل الشاشة وعناصرها ≥٤٨ | {"file":{"inside":true,"minH":48,"dig":0},"teach":{"inside":true,"minH":48,"dig":0}}
+PASS Z17 D لا أخطاء في الصفحة ولا طلبات شبكة خارجية | 
+SCENARIOS 17 RUNS 26 PASS 26 FAIL 0

@@ -64,7 +64,7 @@ const reg=await wait(async()=>p.evaluate(async()=>{const r=await navigator.servi
 rec('S1b تسجيل SW بنطاق /sabourati-smart-board/ فقط',!!reg&&reg.scope===B,reg);
 let info=await shellInfo(p);
 rec('S1c تخزين الملفين مسبقًا في IndexedDB المنفصلة بنفس بايتات الملفات',info.dbs.includes('sabourati-shell-v1')&&Object.keys(info.files).sort().join()==='board.html,index.html'&&info.files['board.html'].sha===sha(boardBuf)&&info.stores.join()==='files',{dbs:info.dbs,files:Object.fromEntries(Object.entries(info.files).map(([k,v])=>[k,{len:v.len,ver:v.ver,fields:v.fields,shaOk:k==='board.html'?v.sha===sha(boardBuf):true}]))});
-rec('S1d ملف board.html على الخادم هو المعتمد دون تعديل (MD5)',md5(boardBuf)==='12b8030494f8fe01acbd8d17376ba0c8',md5(boardBuf));
+rec('S1d ملف board.html على الخادم هو المعتمد دون تعديل (MD5)',md5(boardBuf)===(process.env.EXPECT_MD5||'12b8030494f8fe01acbd8d17376ba0c8'),md5(boardBuf));
 await p.reload();await sleep(1200);const ctl=await p.evaluate(()=>!!navigator.serviceWorker.controller&&navigator.serviceWorker.controller.scriptURL);
 rec('S1e بعد إعادة التحميل تتحكم الصفحة بالـ SW ولا أخطاء ولا طلبات خارجية',!!ctl&&c.errs.length===0&&c.ext.length===0,{ctl,errs:c.errs,ext:c.ext});
 /* ---------- S2: بيانات المستخدم + انقطاع + إعادة تحميل ---------- */

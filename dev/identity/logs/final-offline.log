@@ -1,0 +1,43 @@
+PASS S1a بوابة index.html تنقل إلى board.html مع الحفاظ على ?x=1#h دون حلقة | {"url":"http://localhost:8940/sabourati-smart-board/board.html?x=1#h","navs":2}
+PASS S1b تسجيل SW بنطاق /sabourati-smart-board/ فقط | {"scope":"http://localhost:8940/sabourati-smart-board/","script":"http://localhost:8940/sabourati-smart-board/sw.js"}
+PASS S1c تخزين الملفين مسبقًا في IndexedDB المنفصلة بنفس بايتات الملفات | {"dbs":["sabourati-pro","sabourati-shell-v1"],"files":{"board.html":{"len":2168357,"ver":"1","fields":"body,len,pairId,ts,type,ver","shaOk":true},"index.html":{"len":1277,"ver":"1","fields":"body,len,pairId,ts,type,ver","shaOk":true}}}
+PASS S1d ملف board.html على الخادم هو المعتمد دون تعديل (MD5) | a97957d5aa0ded1c13c7c2c0fd2416d8
+PASS S1e بعد إعادة التحميل تتحكم الصفحة بالـ SW ولا أخطاء ولا طلبات خارجية | {"ctl":"http://localhost:8940/sabourati-smart-board/sw.js","errs":[],"ext":[]}
+PASS S2a قاعدة sabourati-pro موجودة ومنفصلة وفيها رسم المستخدم | {"d0":{"strokes":1,"cards":1},"pro":1384}
+PASS S2b إعادة تحميل board.html دون إنترنت: تعمل بلا شاشة بيضاء | true
+PASS S2c الأدوات تعمل دون إنترنت (خط الأعداد والعجلة) | {"nline":true,"wheel":true}
+PASS S2d بعد إعادة التحميل دون إنترنت يعرض اللوح زر «استعادته» (سلوك السبورة المعتمد) فتعود الرسومات والبطاقات | {"restoreOffered":true,"before":{"strokes":1,"cards":1},"after":{"strokes":1,"cards":1}}
+PASS S3 فتح الرابط الرئيسي دون إنترنت: بوابة ثم السبورة بلا حلقة | {"url":"http://localhost:8940/sabourati-smart-board/board.html","ready":true,"navs":2}
+PASS S4 فتح board.html مباشرة دون إنترنت | true
+PASS S5a قاعدة الملفات تحوي ملفين فقط بحقول (body,len,pairId,ts,type,ver) بمعرّف حزمة واحد وبايتات مطابقة للملفات — لا بيانات مستخدم | {"board.html":"body,len,pairId,ts,type,ver","index.html":"body,len,pairId,ts,type,ver"}
+PASS S5b قاعدة sabourati-pro ما زالت موجودة وبحجم لا يقل عن قبل الانقطاع (ولم يمسّها الـ SW) | {"before":1384,"after":1534}
+PASS S5c كود sw.js لا يشير إلى sabourati-pro ولا يستخدم Cache API | grep
+PASS S6a تحديث board.html: الشبكة أولًا تُظهر النسخة الجديدة ويُحدَّث المخزَّن | {"has2":true,"storedIsV2":true}
+PASS S6b دون إنترنت تُقدَّم النسخة المحدَّثة (الأحدث المخزَّنة) | true
+PASS S6c تحديث sw.js: النسخة الجديدة تنتظر (لا skipWaiting) والقديمة تعمل | {"installing":false,"waiting":true,"active":true}
+PASS S6d ملفات التشغيل تُعاد تخزينها بإصدار SW الجديد عند التثبيت | {"ver":"2"}
+PASS S6e بعد إغلاق كل التبويبات يُفعَّل الإصدار الجديد | {"hasWaiting":false,"activeIsV2":true,"swV2":true}
+PASS S6f أرقام أخطاء/طلبات خارجية خلال S1–S6 | {"errs":[],"ext":[]}
+PASS S7a تنزيل مبتور أثناء التثبيت: يفشل التثبيت ولا يُخزَّن شيء ناقص | {"regs":null,"files":[]}
+PASS S7b بعد عودة الشبكة يكتمل التثبيت والتخزين | ["board.html","index.html"]
+PASS S7c تنزيل مبتور للتحديث: تُقدَّم النسخة السليمة المخزَّنة ولا تُفسد | {"ok7":true,"has3":false,"storedIntact":true}
+PASS S8 شبكة بطيئة جدًا (٧ ثوانٍ): تُقدَّم النسخة المخزَّنة خلال ~٣ ثوانٍ (لا انتظار ٧) | {"ms":3090}
+PASS S9 صفحة غريبة (بوابة واي-فاي) لا تحلّ محل السبورة ولا تُخزَّن | {"okc":true}
+PASS S10a SW التعلم يسجَّل بنطاقه /taa11am-ma-taha/ وللسبورة نطاقها المستقل | ["http://localhost:8940/sabourati-smart-board/","http://localhost:8940/taa11am-ma-taha/"]
+PASS S10b SW التعلم (الأصلي) يحذف الكاشات الغريبة كما توقعنا — لذلك لا نستخدم Cache API | ["taha-app-v71"]
+PASS S10c بعد تفعيل/تحديث SW التعلم (v71→v72) ملفات تشغيل السبورة وقاعدتها سليمة | {"appCaches":1,"boardFiles":["board.html","index.html"]}
+PASS S10d السبورة تعمل دون إنترنت بعد تحديث SW التعلم وبياناتها محفوظة | {"okAfter":true,"stAfter":{"strokes":1,"cards":1},"d1":{"strokes":1,"cards":1}}
+PASS S10e كل صفحة يتحكم بها SW مشروعها فقط | ["http://localhost:8940/sabourati-smart-board/sw.js","http://localhost:8940/taa11am-ma-taha/service-worker.js"]
+PASS N0 نقطة حقن العطل موجودة بين الكتابتين داخل المعاملة نفسها | marker
+PASS N1 عطل بعد كتابة أول ملف وقبل الثاني (التثبيت): تُلغى المعاملة كلها ولا يُخزَّن أي ملف ولا يُفعَّل الـ SW | {"reg":null,"files":[]}
+PASS N2 فشل كتابة حقيقي من IndexedDB (قيد فريد يرفض الملف الثاني): يرجع الأول أيضًا ولا حزمة ناقصة | {"reg":null,"files":[]}
+PASS N3a تثبيت أول سليم بحزمة واحدة (معرّف واحد، بايتات مطابقة) | {"pair":"mwtus5xc04pavn0a"}
+PASS N3b عطل بعد كتابة الملف الأول من الحزمة الجديدة: تبقى الحزمة القديمة كاملة وبمعرّفها وتُقدَّم هي | {"sawB2":false,"sameOldPair":true,"indexStillOld":true}
+PASS N3c بعد زوال العطل: تُستبدل الحزمة كلها معًا (البوابة والسبورة الجديدتان بمعرّف واحد جديد) | {"indexNew":true,"boardNew":true,"newPair":true}
+PASS N4a بوابة جديدة + تنزيل مبتور للسبورة: تبقى الحزمة السابقة سليمة ولا يُقدَّم ملف من حزمة مختلفة | {"pairKept":true,"indexOld":true}
+PASS N4b بوابة جديدة + السبورة 404: تبقى الحزمة السابقة ويستمر عمل السبورة من المخزَّن | {"ok4b":true}
+PASS N5a مخزن غير متسق + دون إنترنت: لا يُقدَّم خليط (يفشل الفتح بدل عرض ملفات غير متوافقة) | failed: page.goto: net::ERR_FAILED at http://localhost:8940/sabourati-smart-board/board.html
+PASS N5b عند عودة الشبكة تُرمَّم الحزمة بمعرّف واحد | {"pairId":"mwtusg2mstko23vm"}
+PASS N6 زيارة الرابط الرئيسي (بوابة ثم سبورة) تنزّل board.html مرة واحدة فقط | {"boardHits":1,"hits":["/sabourati-smart-board/index.html [empty]","/sabourati-smart-board/board.html [empty]"]}
+PASS N7 أخطاء/طلبات خارجية في اختبارات N | {"errs":[],"ext":0}
+SUMMARY total 42 pass 42 fail 0

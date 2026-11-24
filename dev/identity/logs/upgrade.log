@@ -1,0 +1,15 @@
+PASS U0 بصمات الخادم: القديم=المنشور 12b8… والجديد=المختبَر | {"OLDMD5":"12b8030494f8fe01acbd8d17376ba0c8","NEWMD5":"a97957d5aa0ded1c13c7c2c0fd2416d8"}
+PASS U1a المستخدم على النسخة القديمة (فيها الوسم، دون زر عن) | {"tag":true,"about":false,"credit":false,"title":"سبورتي الذكية"}
+PASS U1b رسم/بطاقة محفوظان في sabourati-pro والمخزَّن = بايتات القديمة | {"d0":{"strokes":1,"cards":1},"pro":1384}
+PASS U2a أول فتح بعد النشر يُظهر النسخة الجديدة مباشرة (دون مسح بيانات ودون إعادة تحميل يدوي) | {"tag":false,"about":true,"credit":true,"title":"سبورتي الذكية"}
+PASS U2b المخزَّن للعمل دون إنترنت تحدّث إلى بايتات الجديد (زوج متّسق) | {"n":["board.html","index.html"]}
+PASS U2c بيانات المستخدم السابقة سليمة بعد الترقية وتُستعاد (رسوم+بطاقات) | {"restoreOffered":true,"before":{"strokes":1,"cards":1},"after":{"strokes":1,"cards":1},"len":[1384,1384]}
+PASS U3a إعادة تحميل دون إنترنت بالنسخة الجديدة | 
+PASS U3b نافذة «عن السبورة» تُفتح وتُغلق (Esc وزر الإغلاق) دون إنترنت | {"op":{"open":true,"name":true,"title":true,"noTag":true},"cl":true,"cl2":true}
+PASS U3c رسم ثم تراجع ثم إعادة دون إنترنت | {"s0":{"strokes":1,"cards":1},"s1":{"strokes":2,"cards":1},"s2":{"strokes":1,"cards":1},"s3":{"strokes":2,"cards":1}}
+PASS U3d حفظ تلقائي دون إنترنت ثم إعادة تحميل واستعادة: يعود الرسم الجديد مع القديم | {"s3":{"strokes":2,"cards":1},"s4":{"strokes":2,"cards":1}}
+PASS U3e الأدوات (خط الأعداد، العجلة) دون إنترنت بالنسخة الجديدة | {"nline":true,"wheel":true}
+PASS U4 لا أخطاء جافاسكربت ولا طلبات خارجية طوال الترقية | {"errs":[],"ext":[]}
+PASS U5 الأداء: زمن التحميل والرسم للجديد ≤ ١٫٢٥× القديم (وسيط ٥ تشغيلات) | {"old":{"load":135,"draw":20},"new":{"load":113,"draw":21}}
+
+UPGRADE TOTAL 13 FAIL 0 
